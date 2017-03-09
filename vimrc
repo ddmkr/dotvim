@@ -194,18 +194,18 @@ let g:go_fmt_command = "goimports"
 " ------------------------------------------------------------------------------
 " Use <space> as the leader key. I used to use ',' but it conflicts with a
 " movement command I want to use (see :help ,)
-let mapleader = " "
+"let mapleader = " "
 
 " Prevent entering Ex mode
 " ( Entering Ex mode.  Type 'visual' to go to Normal mode.)
 " http://www.bestofvim.com/tip/leave-ex-mode-good/
-noremap Q <nop>
+"noremap Q <nop>
 
 " Remap semicolon to colon, handy on qwerty
-map ; :
+"map ; :
 " To get the original ';' behavior, just hit it twice
 " More info: http://vim.wikia.com/wiki/Map_semicolon_to_colon
-noremap ;; ;
+"noremap ;; ;
 
 " Sort all words on a line
 command SortWords call setline('.', join(sort(split(getline('.'), ' ')), " "))
