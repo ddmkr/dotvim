@@ -1,4 +1,4 @@
-﻿" ------------------------------------------------------------------------------
+" ------------------------------------------------------------------------------
 " Pathogen
 " ------------------------------------------------------------------------------
 call pathogen#runtime_append_all_bundles()
@@ -82,12 +82,6 @@ set cmdheight=2     " Make the command area two lines high
 " ------------------------------------------------------------------------------
 
 syntax on
-
-" Got laggy vim when using ruby syntax highlighting after I updated to El
-" Capitan, using the old regiex engine fixes it...
-" http://stackoverflow.com/questions/16902317/vim-slow-with-ruby-syntax-highlighting/16920294#16920294
-set re=1 " Use the old regex engine
-
 set ai        " Automatically indent new lines
 set mouse=a
 set smartcase
@@ -138,16 +132,16 @@ set t_Co=256
 " don’t want to use the custom Solarized terminal colors, you will need to use
 " the degraded 256 colorscheme. To do so, simply add the following line before
 " the colorscheme solarized line:
-let g:solarized_termcolors=256
+"let g:solarized_termcolors=256
 
-set background=light
+set background=dark
 colorscheme solarized
 
 " Color the 80th column differently
-if exists('+colorcolumn')
-  set colorcolumn=80
-  hi! ColorColumn ctermbg=187
-endif
+" if exists('+colorcolumn')
+" set colorcolumn=80
+"  hi! ColorColumn ctermbg=187
+"endif
 
 set cursorline
 " Uncomment next lines for further customization
