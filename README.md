@@ -1,6 +1,6 @@
 ## Installation
 
-    git clone --recursive https://github.com/mcls/dotvim.git ~/.vim
+    git clone --recursive git@github.com:ddmkr/dotvim.git ~/.vim
     ln -nfs ~/.vim/vimrc ~/.vimrc
 
 ## Additional installation
